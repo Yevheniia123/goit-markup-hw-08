@@ -1,0 +1,180 @@
+.footer {
+    background-color: #2F303A;
+    @media screen and (max-width: 1190px) {
+        text-align: center;  
+    }
+}
+.footer .logo {
+    display: block;
+    margin-bottom: 20px;
+}
+.studio {
+    color: $backgroundColor;
+}
+.address {
+    color: $backgroundColor;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;  
+}
+
+.address>.contacts {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: normal;  
+}
+.logo-addres {
+    margin-bottom: 60px;
+}
+.slogan {
+    color: $backgroundColor;
+    margin-bottom: 20px;
+   
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1.14;
+    font-weight: bold;
+}
+.container.footer {
+    
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width:$tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+    }
+    @media screen and (min-width:$desktop) {
+        flex-wrap: nowrap;
+        padding-bottom: 0;
+        justify-content: flex-start;
+    }
+}
+.list-link {
+    display: flex;
+    justify-content: center;
+}
+.link-footer {
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: row;
+    content: "";
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+    
+    &:hover {
+    cursor: pointer;
+    background-color: $accentColor;
+    }
+    &:focus {
+    cursor: pointer;
+    background-color: $accentColor;
+    }
+}
+.list-link>li{
+    margin-right: 10px;
+}
+
+.list-link>li:last-child {
+    margin-right: 0;
+  }
+.join {
+    display: flex;
+    flex-direction: column;
+    padding-left: 69px;
+    padding-right: 94px; 
+    margin-bottom: 60px;  
+}
+.contacts.footer>a {
+    color: $primaryColor;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.instagram {
+    background-image: url(../images/instagram.svg); 
+}
+.twitter {
+    background-image: url(../images/twitter.svg);
+}
+.facebook {
+    background-image: url(../images/facebook.svg);
+}
+.linkedin {
+    background-image: url(../images/linkedin.svg);
+}
+.address.item {
+    padding-left: 0;
+}
+.footer-button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    background-color: $accentColor;
+    color: $backgroundColor;
+    letter-spacing: 0.06em;
+    
+    min-width: 200px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 4px;
+    
+    padding: 10px 29px;
+    margin-top: 20px;
+
+    @media screen and (min-width:$desktop) {
+        margin-top: 35px;
+        margin-left: 12px;
+    }
+}
+.footer-button::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/send.svg);
+    background-size: contain;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.footer-email {
+    display: flex;
+    @media screen and (max-width:1199px) {
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+    }
+}
+.footer-input {
+    width: 450px;
+    padding: 14px;
+    
+    background-color: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;    
+    color: $backgroundColor; 
+    
+    @media screen and (min-width:$desktop) {
+        width: 358px;
+        padding: 14px;
+    }
+}
+.slogan-email {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width:$desktop) {
+        
+        
+    }
+}

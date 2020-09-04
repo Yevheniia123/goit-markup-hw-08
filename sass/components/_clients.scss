@@ -1,0 +1,82 @@
+.list-client {
+    display: flex; 
+    flex-wrap: wrap;
+    margin: -15px;
+    @media screen and (min-width:$desktop) {
+        flex-wrap: nowrap;
+    }
+}
+.client {
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 210px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #afb1b8; 
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        border: 1px solid $accentColor;
+        cursor: pointer;
+        fill: $accentColor;
+    }
+    &:focus {
+        border: 1px solid $accentColor;
+        cursor: pointer;
+        fill: $accentColor;
+    }
+    @media screen and (min-width:$tablet) {
+        width: 226px;
+    }
+    @media screen and (min-width:$desktop) {
+        width: 170px;
+    }
+}
+.list-client>li:last-child {
+    @media screen and (min-width:$desktop) {
+        margin-right: 0; 
+    }  
+}
+.list-client>li {
+    margin: 15px;
+    width: calc((100% - 4*15px) / 2);
+    @media screen and (min-width:$tablet) {
+        width: calc((100% - 6*15px) / 3); 
+    }
+    @media screen and (min-width:$desktop) {
+        // margin-right: 30px; 
+        margin: 0;
+    }  
+}
+.client-logo {
+    color: currentColor;
+    display: block;
+}
+.yaco {
+    width: 44px;
+    height: 49px;
+}
+.tagline {
+    width: 40px;
+    height: 52px;
+}
+.company {
+    width: 41px;
+    height: 43px;
+}
+.foster {
+    width: 80px;
+    height: 42px;
+}
+.brand {
+    width: 59px;
+    height: 47px;
+}
+.tag {
+    width: 89px;
+    height: 45px;
+}

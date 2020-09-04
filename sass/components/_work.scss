@@ -1,0 +1,32 @@
+.item-title {
+    color: $backgroundColor;
+    background-color: rgba(47, 48, 58, 0.8);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.work-list {
+    display: flex; 
+}
+.work-list>li:not(:last-child) {
+    margin-right: 30px;
+}
+.work-item {
+    position: relative;
+}
+.section.work {
+    padding-top: 0;
+    @media screen and (max-width:1199px) {
+        display: none;
+    }
+}
