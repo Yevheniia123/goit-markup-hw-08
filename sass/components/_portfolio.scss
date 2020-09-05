@@ -73,13 +73,13 @@ button {
 }
 .portfolio-list {
     display: flex;
-    margin: -15px;
+    
     @media screen and (max-width: 767px) {
         flex-direction: column;
-        // margin: -15px;
     }
     @media screen and (min-width:$tablet) {
         flex-wrap: wrap;  
+        margin: -15px;
     }
     @media screen and (min-width:$desktop) {
     //     width: 1170px; 

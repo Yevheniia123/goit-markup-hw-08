@@ -7,8 +7,8 @@
         background-color: transparent;
         
     
-        & .icon-close {
-            display: none;
+        & .icon-menu {
+           display: none;
         } 
     }
     @media screen and (min-width:$tablet) {
@@ -23,6 +23,7 @@
     }
     
 }
+
 .menu-button.is-open .icon-menu {
     @media screen and (max-width: 767px) {
         display: block;
@@ -36,6 +37,7 @@
     left: 0;
     width: 100%;
     height: 400px;
+    z-index: 9;
 
     display: none;
     background-color: #FFFFFF;

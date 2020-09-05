@@ -20,8 +20,11 @@
     &.header {
         margin-top: 16px;
         margin-bottom: 16px;
-        margin-right: 81px;
-        // margin-left: 200px;
+        display: block;
+        margin-right: 59px;
+        @media screen and (min-width:$desktop) {
+            margin-right: 81px;
+        }
     }
     @media screen and (min-width:$desktop) {
         font-size: 26px;
@@ -128,14 +131,16 @@
         padding-bottom: 5px;
         
     }
+    @media screen and (min-width:$desktop) {
+        margin-right: 30px;  
+    }
     color: $primaryColor;
     letter-spacing: 0.02em;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     fill: $primaryColor;
-
-    margin-right: 30px;
+    
     padding-top: 32px;
     padding-bottom: 32px;
 
